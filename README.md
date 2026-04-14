@@ -1,3 +1,4 @@
+---
 title: Emotion Detector
 emoji: 🤖
 colorFrom: blue
