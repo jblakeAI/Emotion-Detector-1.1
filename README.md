@@ -1,3 +1,13 @@
+title: Emotion Detector
+emoji: 🤖
+colorFrom: blue
+colorTo: purple
+sdk: gradio
+sdk_version: "6.12.0"
+python_version: "3.11.9"
+app_file: app.py
+pinned: false
+---
 # Emotion Detector 
 
 This app can be deployed for free on Hugging Face Spaces so it runs for free and is always on.
