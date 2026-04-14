@@ -1,3 +1,5 @@
 .env
 .venvEmo/
 __pycache__/
+test_emotion_detection.py
+
