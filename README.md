@@ -1,6 +1,6 @@
-# Emotion Detector (Free Online Deployment)
+# Emotion Detector 
 
-This project can be deployed for free on Hugging Face Spaces so it runs online without your machine staying on.
+This app can be deployed for free on Hugging Face Spaces so it runs for free and is always on.
 
 ## Recommended architecture
 
