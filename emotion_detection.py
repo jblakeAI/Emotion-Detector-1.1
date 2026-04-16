@@ -21,8 +21,10 @@ def _failed_response(reason):
     return {
         "anger": None,
         "disgust": None,
+        "frustration": None,
         "fear": None,
         "joy": None,
+        "excitement": None,
         "sadness": None,
         "dominant_emotion": None,
         "_detail": reason,
@@ -34,8 +36,10 @@ def emotion_detector(text_to_analyze):
     blank = {
         "anger": None,
         "disgust": None,
+        "frustration": None,
         "fear": None,
         "joy": None,
+        "excitement": None,
         "sadness": None,
         "dominant_emotion": None,
     }
@@ -59,7 +63,7 @@ def emotion_detector(text_to_analyze):
     if not predictions:
         return _failed_response("bad_response")
 
-    allowed_labels = {"anger", "disgust", "fear", "joy", "sadness"}
+    allowed_labels = {"anger", "disgust","frustration", "fear", "joy","excitement", "sadness"}
     emotions = {key: 0.0 for key in allowed_labels}
 
     try:

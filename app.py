@@ -28,23 +28,27 @@ def analyze_emotion(text):
             {
                 "anger": 0.0,
                 "disgust": 0.0,
+                "frustration": 0.0,
                 "fear": 0.0,
                 "joy": 0.0,
+                "excitement": 0.0,
                 "sadness": 0.0,
             },
         )
 
     message = (
         f"Dominant emotion: {result['dominant_emotion']}\n\n"
-        f"anger={result['anger']}, disgust={result['disgust']}, "
-        f"fear={result['fear']}, joy={result['joy']}, sadness={result['sadness']}"
+        f"anger={result['anger']}, disgust={result['disgust']}, frustration={result['frustration']}"
+        f"fear={result['fear']}, joy={result['joy']}, excitement={result['excitement']}, sadness={result['sadness']}"
     )
 
     chart_data = {
         "anger": float(result["anger"]),
         "disgust": float(result["disgust"]),
+        "frustration": float(result["frustration"]),
         "fear": float(result["fear"]),
         "joy": float(result["joy"]),
+        "excitement": float(result['excitement']),
         "sadness": float(result["sadness"]),
     }
     return message, chart_data
@@ -68,4 +72,4 @@ demo = gr.Interface(
 
 
 if __name__ == "__main__":
-    demo.launch()
+    demo.launch(share=True)
