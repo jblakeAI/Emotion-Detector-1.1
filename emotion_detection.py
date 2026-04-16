@@ -21,10 +21,8 @@ def _failed_response(reason):
     return {
         "anger": None,
         "disgust": None,
-        "frustration": None,
         "fear": None,
         "joy": None,
-        "excitement": None,
         "sadness": None,
         "dominant_emotion": None,
         "_detail": reason,
@@ -36,10 +34,8 @@ def emotion_detector(text_to_analyze):
     blank = {
         "anger": None,
         "disgust": None,
-        "frustration": None,
         "fear": None,
         "joy": None,
-        "excitement": None,
         "sadness": None,
         "dominant_emotion": None,
     }
